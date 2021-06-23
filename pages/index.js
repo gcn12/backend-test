@@ -25,7 +25,8 @@ export default function Home() {
   const getData = () => {
     // fetch('http://localhost:3001/movies')
     // fetch('https://backend-test-gcn12.herokuapp.com/movies')
-    fetch('https://server-test-2-gcn12.herokuapp.com/movies')
+    // fetch('https://server-test-2-gcn12.herokuapp.com/movies')
+    fetch("https://blooming-hollows-98248.herokuapp.com/")
     .then(data=>data.json())
     .then(data=> {
       console.log(data.res)
