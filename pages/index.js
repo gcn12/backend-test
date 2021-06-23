@@ -51,6 +51,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       {/* {text} */} 
+      app
       {/* {text.map((item)=> {
         return(
           <div key={item.name}>
