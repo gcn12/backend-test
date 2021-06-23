@@ -37,8 +37,9 @@ export default function Home() {
     // fetch('http://localhost:3001/movies')
     // fetch('https://backend-test-gcn12.herokuapp.com/movies')
     fetch('https://server-test-2-gcn12.herokuapp.com/')
+    .then(data=>data.json())
     .then(data=> {
-      console.log(data.res)
+      console.log(data.info)
     })
   }
 
