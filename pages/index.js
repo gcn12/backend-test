@@ -33,7 +33,7 @@ export default function Home() {
     })
   }
 
-  const getData = () => {
+  const getRoot = () => {
     // fetch('http://localhost:3001/movies')
     // fetch('https://backend-test-gcn12.herokuapp.com/movies')
     fetch('https://server-test-2-gcn12.herokuapp.com/')
@@ -63,7 +63,7 @@ export default function Home() {
       {/* {text} */} 
       app
       <button onClick={getData}>getData</button>
-      <button onClick={root}>root</button>
+      <button onClick={getRoot}>root</button>
       {/* {text.map((item)=> {
         return(
           <div key={item.name}>
