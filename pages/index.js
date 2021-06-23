@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 export default function Home() {
   const [text, setText] = useState('')
   useEffect(() => {
-    getData()
+    // getData()
     // addData()
     // deleteData()
   }, [])
@@ -33,6 +33,15 @@ export default function Home() {
     })
   }
 
+  const getData = () => {
+    // fetch('http://localhost:3001/movies')
+    // fetch('https://backend-test-gcn12.herokuapp.com/movies')
+    fetch('https://server-test-2-gcn12.herokuapp.com/')
+    .then(data=> {
+      console.log(data.res)
+    })
+  }
+
   const addData = () => {
     fetch('http://localhost:3001/new-post', {
       method: "post",
@@ -53,6 +62,8 @@ export default function Home() {
     <div className={styles.container}>
       {/* {text} */} 
       app
+      <button onClick={getData}>getData</button>
+      <button onClick={root}>root</button>
       {/* {text.map((item)=> {
         return(
           <div key={item.name}>
