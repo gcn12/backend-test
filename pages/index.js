@@ -24,7 +24,7 @@ export default function Home() {
   }
   const getData = () => {
     // fetch('http://localhost:3001/movies')
-    fetch('https://backend-test-gcn12.herokuapp.com/')
+    fetch('https://backend-test-gcn12.herokuapp.com/movies')
     .then(data=>data.json())
     .then(data=> {
       console.log(data.res)
